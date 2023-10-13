@@ -18,13 +18,13 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    /* border: 2px solid red;  */
+    background-color: white; 
     color: #FFF;
     height: 60px;
     padding: 1em;
     width: 100%;
     position: fixed;
+    /* border: 2px solid red;  */
     
   }
 
@@ -149,58 +149,140 @@ html, body {
     }
 }
 
-.affiche{
+                      /* main */
+.annonce{
+  
+    
+  text-align: center;
   width: 100%;
-  height: auto;
+  height: 30rem;
+  margin: 0 auto;
+  /* border: 3px solid yellow; 
+  background-color: white; */
+  justify-content: space-around;
+  flex-wrap: wrap; 
   display: flex;
-  
-  
+    
 }
 
-.content{
-  height: auto;
+.contenue{
+  height: 400px;
   width: 100%;
-   background-color: green; 
-  /* border: 2px solid rgb(11, 10, 12);  */
-  margin-top: 5rem;
-  border-radius: 95px 0 80px 0; 
+ /*  border: 5px solid purple; */
+  background-color: green;
+  margin-top: 3.5rem;
+  border-radius: 60px 0 60px 0;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  display: flex;
 }
 
 .element{
-  flex-wrap: wrap;
+  width: 28rem;
+  height: 20rem;
+  /* border: 1px solid black;  */
+  margin-top: 2rem;
+  padding: 0;
+  
+}
+
+.element1{
+  width: 18rem;
+  height: 10rem;
+  /* border: 1px solid black;  */
+  margin-top: 7rem;
+}
+
+.element1 p{
+  font-size: 1rem;
+  color: white;
+  
+}
+
+/* ARTICLES*/
+
+.element img{
+  width: 100%;
+  height: 100%;
+}
+
+.titre{
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.produits{
+  flex-wrap: wrap; 
+    display: flex;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-content: space-around;
+    border: 2px solid green;
+}
+
+.articles{
+  width: 13rem;  
+  border: 3px solid green;
+  
+  height: auto;
+  border-radius: 10px;
+  margin: 1rem;
+
+}
+.articles img{
+  height: 17rem;
+  width: 100%;
+}
+
+/*KIST D'ENTRAINEMENTS*/
+
+.titre-kits{
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.content-kit{
+  flex-wrap: wrap; 
   display: flex;
   text-align: center;
-  
-  height: auto;
   width: 100%;
+  height: auto;
   margin: 0 auto;
+  margin-top: 2rem;
   justify-content: space-around;
-  border: 1px solid blue;
-  border-radius: 95px 0 80px 0; 
-  
+  border: 2px solid red;
+  background-color: green;
 }
 
-.text{
-  width: 30rem;
+.ok{
   height: auto;
-  border: 1px solid yellow;
-  margin-top: 2rem;
+  width: 80%;
+  /* border: 2px solid black; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; 
+  display: flex;
+  justify-content: space-around;
 }
 
-.photo{
-  width: 40rem;
-  height: auto;
-  border: 1px solid rgb(17, 0, 255);
-  margin-top: 2rem;
+.ok img{
+  width: 12rem;
+  height: 14rem;
+  border-radius: 10px;
 }
-
-.description{
-  font-size: 1.5rem;
+p{
+  margin-top: 0.8rem;
+  font-weight: bold;
   color: white;
-  margin-top: 8rem;
+  margin-bottom: 1rem;
 }
 
-.photo img{
-  width: 90%;
-  height: 30rem;
-}
