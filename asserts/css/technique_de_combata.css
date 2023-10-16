@@ -18,7 +18,8 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: white; 
+    background-color: green; 
+    border-radius: 20px 0 20px 0;
     color: #FFF;
     height: 60px;
     padding: 1em;
@@ -74,7 +75,9 @@ html, body {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: green;
+    /* background-color: green; */
+    background-color: white;
+    
     position: absolute;
     height: 4px;
     width: 30px;
@@ -149,206 +152,59 @@ html, body {
     }
 }
 
-                      /* main */
+/* BODY */
+
 .annonce{
   
     
-  text-align: center;
-  width: 100%;
-  height: 30rem;
-  margin: 0 auto;
-  /* border: 3px solid yellow; 
-  background-color: white; */
-  justify-content: space-around;
-  flex-wrap: wrap; 
-  display: flex;
-    
-}
+    text-align: center;
+    width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+    /* border: 3px solid yellow; 
+    background-color: white; */
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    display: flex;
+      
+  }
+
 
 .contenue{
-  height: 400px;
-  width: 100%;
- /*  border: 5px solid purple; */
-  background-color: green;
-  margin-top: 3.5rem;
-  border-radius: 60px 0 60px 0;
-  justify-content: space-around;
-  flex-wrap: wrap; 
-  display: flex;
-}
-
-.element{
-  width: 28rem;
-  height: 20rem;
-  /* border: 1px solid black;  */
-  margin-top: 2rem;
-  padding: 0;
-  
-}
-
-.element1{
-  width: 18rem;
-  height: 10rem;
-  /* border: 1px solid black;  */
-  margin-top: 7rem;
-}
-
-.element1 p{
-  font-size: 1rem;
-  color: white;
-  
-}
-
-/* ARTICLES*/
-
-.element img{
-  width: 100%;
-  height: 100%;
-}
-
-.titre{
-  color: green;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-left: 4rem;
-}
-
-.produits{
-  flex-wrap: wrap; 
-    display: flex;
-    text-align: center;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 3rem;
+    height: 400px;
+    width: 100%;
+    border: 1px solid green; 
+    background-color: white;
+    margin-top: 3.5rem;
+    border-radius: 60px 0 60px 0;
     justify-content: space-around;
-   /*  border: 2px solid green; */
-}
-
-.articles{
-  width: 13rem;  
-  /* border: 3px solid green; */
+    flex-wrap: wrap; 
+    display: flex;
+  }
   
-  height: auto;
-  border-radius: 10px;
-  margin: 1rem;
-
-}
-.articles img{
-  height: 17rem;
-  width: 100%;
-}
-
-/*KIST D'ENTRAINEMENTS*/
-
-.titre-kits{
-  color: green;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  margin-left: 4rem;
-}
-
-.content-kit{
-  flex-wrap: wrap; 
-  display: flex;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 2rem;
-  justify-content: space-around;
-  /* border: 2px solid red; */
-  background-color: green;
-}
-
-.ok{
-  height: auto;
-  width: 80%;
-  /* border: 2px solid black; */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap; 
-  display: flex;
-  justify-content: space-around;
-}
-
-.ok img{
-  width: 12rem;
-  height: 14rem;
-  border-radius: 10px;
-}
-p{
-  margin-top: 0.8rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.titre-reference{
-  color: green;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  margin-left: 4rem;
-}
-
-
-
-.reference{
-  flex-wrap: wrap; 
-  display: flex;
-  text-align: center;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 3rem;
-  justify-content: space-around;
-}
-
-.element{
+  .element{
+    width: 28rem;
+    height: 20rem;
+    /* border: 1px solid black;  */
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .element1{
+    width: 18rem;
+    height: 10rem;
+    /* border: 1px solid black;  */
+    margin-top: 7rem;
+  }
+  
+  .element1 p{
+    font-size: 1rem;
+    color: black;
     
-  width: 16rem;  
-  /* border: 1px solid #FF8C00; */
-  height: auto;
-  border-radius: 30px 0 30px 0;
-  background-color: green;
-  margin: 1rem;
-}
-.case-image {
-  width: 100%;
-}
+  }
 
-.case-image img{
-  width: 100%;
-  height: 12rem;
-  border-radius: 30px 0 0 0;
-  
-  
-}
+  /* LIVRE*/
 
-.case-image h3{
-  margin-top: 1rem;
-}
-
-.description{
-  width: 16rem;
-  height: 13rem;
-  margin-top: 1rem;
-}
-
-.description p{
-  font-size: 0.9rem;
-  color: white;
-}
-
-.element h3{
-  color: white;
-}
-
-
-.titre-favoris{
+  .titre-favoris{
   color: green;
   font-weight: bold;
   font-size: 1.5rem;
