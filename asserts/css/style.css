@@ -24,14 +24,18 @@ html, body {
     padding: 1em;
     width: 100%;
     position: fixed;
-    /* border: 2px solid red;  */
+    /* border: 1px solid white; */  
     
   }
 
   .top-nav h1 a{
     text-decoration: none;
     color: black;
-    
+  }
+
+  .top-nav h1 a img{
+    text-decoration: none;
+    color: black;
   }
 
   .menu {
@@ -43,21 +47,36 @@ html, body {
   }
   
   img{
-  height: 20px;
-  width: 20px;
+    height: 30px;
+  width: 30px;
+  padding: 0;
   }
+  
+  
   .menu  li {
     margin: 0 3rem; 
     overflow: hidden;
   }
 
-  .menu li a{
+  .menu li a {
     text-decoration: none;
     color: black;
     font-size: .8rem;
     font-weight: bold;
-    
+    /* display: inline-block;
+    vertical-align: bottom;  */
   }
+
+  .menu li a img{
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    /* display: inline-block;
+    vertical-align: bottom;  */
+  }
+
+  
 
   .menu-button-container {
     display: none;
@@ -153,8 +172,6 @@ html, body {
 
                       /* main */
 .annonce{
-  
-    
   text-align: center;
   width: 100%;
   height: 30rem;
@@ -168,9 +185,9 @@ html, body {
 }
 
 .contenue{
-  height: 400px;
+  height: auto;
   width: 100%;
- /*  border: 5px solid purple; */
+ /* border: 5px solid purple;  */
   background-color: green;
   margin-top: 3.5rem;
   border-radius: 60px 0 60px 0;
@@ -179,14 +196,20 @@ html, body {
   display: flex;
 }
 
-.element{
+.element-image{
   width: 28rem;
   height: 20rem;
-  /* border: 1px solid black;  */
+  border: 2px solid rgb(196, 16, 16);  
   margin-top: 2rem;
+  border-radius: 0;
   padding: 0;
   
 }
+
+.element-image img{
+  width: 100%;
+  height: 100%;
+} 
 
 .element1{
   width: 18rem;
@@ -203,28 +226,25 @@ html, body {
 
 /* ARTICLES*/
 
-.element img{
-  width: 100%;
-  height: 100%;
-}
+
 
 .titre{
   color: green;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 13rem;
   margin-left: 4rem;
 }
 
 .produits{
   flex-wrap: wrap; 
-    display: flex;
-    text-align: center;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 3rem;
-    justify-content: space-around;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  justify-content: space-around;
    /*  border: 2px solid green; */
 }
 
@@ -281,16 +301,21 @@ html, body {
   height: 14rem;
   border-radius: 10px;
 }
-.button{
+button.bt{
   margin-top: -5px;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
   background-color: white;
   color: black;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border: 0;
 }
 
-.button:hover{
-  background-color: green;
+button.bt:hover{
+  background-color: rgba(0, 0, 0, 0.281);
+  color: white;
 }
 p{
   margin-top: 0.8rem;
@@ -399,14 +424,18 @@ p{
 }
 
 .nom{
-  height: 2rem;
-  width: 60%;
+  height: 3rem;
+  width: 70%;
   border: 1px solid yellow;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
-button{
+.auteur,.titre-li,.price{
+  color: black;
+}
+
+.button{ 
   margin-top: 1rem;
   height: 2rem;
   width: 6rem;
@@ -414,6 +443,11 @@ button{
   color: white;
   border-radius: 5px;
   border: 0;
+}
+
+.button:hover{
+  background-color: rgba(0, 128, 0, 0.815);
+  color: black;
 }
 
 .foot-content{
@@ -460,5 +494,5 @@ button{
 }
 
 .deconnecter{
-  /* margin-left: -80rem; */
+  margin-left: -80rem; 
 }

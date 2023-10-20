@@ -80,4 +80,13 @@ body {font-family: Arial, Helvetica, sans-serif;
     margin:0 auto;
     margin-top: 2rem;
   }
+  .creat{
+   margin: 8rem;
+   color: white;
+   text-decoration: none;
+  }
+
+  .creat:hover{
+    color: black;
+  }
  

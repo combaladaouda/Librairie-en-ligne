@@ -18,18 +18,22 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: green; 
-    border-radius: 20px 0 20px 0;
+    background-color: white; 
     color: #FFF;
     height: 60px;
     padding: 1em;
     width: 100%;
     position: fixed;
-    /* border: 2px solid red;  */
+    border: 1px solid black;
     
   }
 
   .top-nav h1 a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .top-nav h1 a img{
     text-decoration: none;
     color: black;
   }
@@ -43,20 +47,36 @@ html, body {
   }
   
   img{
-  height: 20px;
-  width: 20px;
+    height: 30px;
+  width: 30px;
+  padding: 0;
   }
+  
+  
   .menu  li {
     margin: 0 3rem; 
     overflow: hidden;
   }
 
-  .menu li a{
+  .menu li a {
     text-decoration: none;
     color: black;
     font-size: .8rem;
-    
+    font-weight: bold;
+    /* display: inline-block;
+    vertical-align: bottom;  */
   }
+
+  .menu li a img{
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    /* display: inline-block;
+    vertical-align: bottom;  */
+  }
+
+  
 
   .menu-button-container {
     display: none;
@@ -75,9 +95,7 @@ html, body {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    /* background-color: green; */
-    background-color: white;
-    
+    background-color: green;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -150,166 +168,4 @@ html, body {
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #f80808;
     }
-}
-
-/* BODY */
-
-.annonce{
-  
-    
-    text-align: center;
-    width: 100%;
-    height: 30rem;
-    margin: 0 auto;
-    /* border: 3px solid yellow; 
-    background-color: white; */
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    display: flex;
-      
-  }
-
-
-.contenue{
-    height: 400px;
-    width: 100%;
-    border: 1px solid green; 
-    background-color: white;
-    margin-top: 3.5rem;
-    border-radius: 60px 0 60px 0;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    display: flex;
-  }
-  
-  .element{
-    width: 28rem;
-    height: 20rem;
-    /* border: 1px solid black;  */
-    margin-top: 2rem;
-    padding: 0;
-  }
-  .element1{
-    width: 18rem;
-    height: 10rem;
-    /* border: 1px solid black;  */
-    margin-top: 7rem;
-  }
-  
-  .element1 p{
-    font-size: 1rem;
-    color: black;
-    
-  }
-
-  /* LIVRE*/
-
-  .titre-favoris{
-  color: green;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  margin-left: 4rem;
-}
-
-.article-prix{
-  flex-wrap: wrap; 
-  display: flex;
-  text-align: center; 
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 3rem;
-  justify-content: space-around;
-}
-
-.contenue-article{
-  height: auto;
-  width: 12rem;
-  border: 1px solid red;
-  margin-bottom: 1rem;
-}
-.livre img{
-  width: 100%;
-  height: 14rem;
-  border: 2px solid green;
-}
-
-.titre-livre{
-  height: 3rem;
-  width: 60%;
-  border: 1px solid blue;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.titre-livre p{
-  color: black;
-}
-
-.nom{
-  height: 2rem;
-  width: 60%;
-  border: 1px solid yellow;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-
-button{
-  margin-top: 1rem;
-  height: 2rem;
-  width: 6rem;
-  background-color: green;
-  color: white;
-  border-radius: 5px;
-  border: 0;
-}
-
-
-
-.foot-content{
-  flex-wrap: wrap; 
-  display: flex;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 3rem;
-  justify-content: space-around;
-  border: 1px solid blue;
-  background-color: black;
-}
-.reseau{
-  margin: 1rem;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.social{
-  margin-top: 1rem;
-}
-
-.trait{
-  height: .2rem;
-  width: 40rem;
-  background-color: green;
-  margin-bottom: 1rem;
-}
-
-.descript span{
-  color: green;
-  font-weight: bold;
-}
-
-.descript{
-  margin-bottom: 1rem;
-}
-
-.deconnecter img{
-  height: 2rem;
-  width: 2rem;
-}
-
-.deconnecter{
-  margin-left: -80rem; 
 }

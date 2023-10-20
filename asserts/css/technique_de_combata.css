@@ -264,3 +264,52 @@ button{
   border-radius: 5px;
   border: 0;
 }
+
+
+
+.foot-content{
+  flex-wrap: wrap; 
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  justify-content: space-around;
+  border: 1px solid blue;
+  background-color: black;
+}
+.reseau{
+  margin: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.social{
+  margin-top: 1rem;
+}
+
+.trait{
+  height: .2rem;
+  width: 40rem;
+  background-color: green;
+  margin-bottom: 1rem;
+}
+
+.descript span{
+  color: green;
+  font-weight: bold;
+}
+
+.descript{
+  margin-bottom: 1rem;
+}
+
+.deconnecter img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.deconnecter{
+  margin-left: -80rem; 
+}

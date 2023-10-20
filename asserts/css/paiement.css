@@ -162,11 +162,32 @@ body{
     
 }
 .global{
-    height: 30rem;
+    height: auto;
     width: 100%;
     margin: 0 auto;
-    border: 1px  solid white;
-   
+    border: 1px  solid rgb(231, 20, 20);
+}
+
+.ajout{
+ 
+  border: 1px solid blue;
+  
+    flex-wrap: wrap; 
+    display: flex;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.oook{
+  height: 5rem;
+  width: 20%;
+  border: 1px solid yellow;
+ margin: 1rem;
 }
 
 .forme{
@@ -274,3 +295,50 @@ button:hover{
     background-color: green;
 }
 
+
+.foot-content{
+  flex-wrap: wrap; 
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  justify-content: space-around;
+  border: 1px solid blue;
+  background-color: black;
+}
+.reseau{
+  margin: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.social{
+  margin-top: 1rem;
+}
+
+.trait{
+  height: .2rem;
+  width: 40rem;
+  background-color: green;
+  margin-bottom: 1rem;
+}
+
+.descript span{
+  color: green;
+  font-weight: bold;
+}
+
+.descript{
+  margin-bottom: 1rem;
+}
+
+.deconnecter img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.deconnecter{
+  margin-left: -80rem; 
+}
