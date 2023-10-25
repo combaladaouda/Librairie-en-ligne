@@ -30,7 +30,7 @@ body {font-family: Arial, Helvetica, sans-serif;
         margin-left: 0px;
         resize: vertical;
       }
-  input[type=password] {
+  input[type=file] {
     outline: none;
     width: 100%;
     padding: 10px;
@@ -44,7 +44,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     resize: vertical;
   }
 
-  input[type=email] {
+  input[type=number] {
     outline: none;
     width: 100%;
     padding: 10px;

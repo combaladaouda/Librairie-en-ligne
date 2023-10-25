@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-</head>
-<body>
+
 
     <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asserts/css/connexion.css">
-    <title>Inscrition</title>
+    <title>login</title>
 </head>
 <body>
     <div class="container">
@@ -21,12 +14,12 @@
         <form action="#!">
 
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Votre email...">
+          <input type="email" id="email" name="email" placeholder="Votre email..." required>
 
           <label for="password">Mot de passe</label>
-          <input type="password" id="nom" placeholder="Votre Mot de passe...">
+          <input type="password" id="password" name="password" placeholder="Votre Mot de passe..." required>
 
-          <input type="button" value="Connexion" class="envoyer"> <br><br>
+          <button type="submit"  class="envoyer">Connexion</button> <br><br>
           <a class="creat" href="./inscription.html"><span>Creer un compte</span></a>
 
         </form>
@@ -34,7 +27,5 @@
       </div>
 
 </body>
-</html>
-    
-</body>
+<script src="../js/login.js"></script>
 </html>
