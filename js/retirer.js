@@ -6,14 +6,14 @@ let html ="";
 
 function afficher(){
      ajout.forEach(element => {
-        /* html +=`<div class="contenue-article">
+        html +=`<div class="contenue-article">
         <div class="livre"><img src="${element.a}" alt="" class="img-doc"></div>
         <div class="titre-livre"><p class="titre-li">${element.b}</p></div>
         <div class="nom"><p class="auteur">${element.c}</p></div>
         <div class="prix"><p class="price" >${element.d}</p></div>
-        <button class="button" id="${element.id}">Retirer</button> 
+        <button class="button" id="${element.id}">Ajouter</button> 
       </div>
-      ` */
+      ` 
     })
     document.querySelector(".ajout").innerHTML = html;
     
