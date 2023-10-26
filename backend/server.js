@@ -14,9 +14,9 @@ app.use(cors());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-app.use('/api/v.1/user', RouterUser);
-app.use('/api/v.1/auth', RouterLogin);
-app.use('/api/v.1/article', RouterArticle);
+app.use('/api/v1/user', RouterUser);
+app.use('/api/v1/auth', RouterLogin);
+app.use('/api/v1/article', RouterArticle);
 
 
 const port = process.env.PORT || 4010;
