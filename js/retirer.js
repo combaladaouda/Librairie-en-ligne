@@ -1,24 +1,46 @@
   /* AFFICHAGE DANS LE PANIER */
 
-const ajout = JSON.parse(localStorage.getItem("panier"));
 
-let html ="";
+
+let baliseAjout = document.querySelector(".ajout");
 
 function afficher(){
-     ajout.forEach(element => {
-        html +=`<div class="contenue-article">
-        <div class="livre"><img src="${element.a}" alt="" class="img-doc"></div>
-        <div class="titre-livre"><p class="titre-li">${element.b}</p></div>
-        <div class="nom"><p class="auteur">${element.c}</p></div>
-        <div class="prix"><p class="price" >${element.d}</p></div>
-        <button class="button" id="${element.id}">Ajouter</button> 
-      </div>
-      ` 
-    })
-    document.querySelector(".ajout").innerHTML = html;
+  if(localStorage.getItem("panier")){
+    const ajout = JSON.parse(localStorage.getItem("panier"));
+    ajout.forEach(element => {
+      baliseAjout.innerHTML +=`<div class="contenue-article">
+      <div class="livre"><img src="${element.image}" alt="" class="img-doc"></div>
+      <div class="titre-livre"><p class="titre-li">${element.titre}</p></div>
+      <div class="nom"><p class="auteur">${element.nom}</p></div>
+      <div class="prix"><p class="price" >${element.prix}</p></div>
+      <button class="retirer" id="${element.id}">Retirer</button> 
+    </div>`; 
+  })
+
+  document.querySelectorAll(".retirer").forEach(item=>item.addEventListener("click", event=>{
+    if(confirm("voulez-vous annuler ?")){
+      const id = event.target.id;
+      event.target.closest(".contenue-article").remove();
+      let allPanier = JSON.parse(localStorage.panier).filter(el=>el.id!=id);
+      localStorage.setItem("panier", JSON.stringify(allPanier));
+      window.location.reload()
+    }
     
+  }))
+
+  }
 } 
 afficher();
+
+/* const retirePanier = ()=>{
+  document.querySelectorAll(".retirer").forEach(item=>item.addEventListener("click", event=>{
+    const id = event.target.id;
+    event.target.closest(".contenue-article").revome();
+    let allPanier = JSON.parse(localStorage.panier).filter(el=>el.id!=id);
+    localStorage.setItem("panier", allPanier);
+  }))
+};
+retirePanier(); */
 
 /* RETITRER DU PANIER */
 

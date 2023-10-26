@@ -8,7 +8,7 @@ formulaire.addEventListener('submit',e=> {
     const data = new FormData();
     data.append('email',email);
     data.append('password',password);
-    fetch('http://localhost:4010/api/v.1/auth/login',{
+    fetch('https://librairie.onrender.com/api/v.1/auth/login',{
         method:"POST",
         body:new URLSearchParams(data)
     })

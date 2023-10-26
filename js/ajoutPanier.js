@@ -1,41 +1,24 @@
 const button = document.querySelectorAll(".button");
-const countPanier = JSON.parse(localStorage.getItem("panier"))
+const countPanier = localStorage.getItem("panier") ? JSON.parse(localStorage.getItem("panier")) : [];
 const count = document.querySelector(".count");
 
 
 
-count.textContent = countPanier === null ? 0 : countPanier.length;
-
+count.textContent = countPanier.length;
 button.forEach(btn =>{
-    
     btn.addEventListener("click", event =>{
         const sibling = event.target.id;
-        
         const contenueArticle = event.target.closest(".contenue-article");
         const image = contenueArticle.querySelector(".img-doc").src;
         const titre = contenueArticle.querySelector(".titre-li").textContent;
         const nom = contenueArticle.querySelector(".auteur").textContent;
         const prix = contenueArticle.querySelector(".price").textContent;
-    
-        
-        const newPanier = {image,titre,nom,prix:prix}
-        
-        
+        const newPanier = {image,titre,nom,prix:prix, id:countPanier.length+1}
         let panier = localStorage.getItem("panier");
 
-        if(panier === null){
-            panier = [];
-            panier.push(newPanier);
-            localStorage.setItem("panier", JSON.stringify(panier));
-            window.location.reload();
-        }else{
-            panier = JSON.parse(panier)
-            panier.push(newPanier);
-            localStorage.setItem("panier", JSON.stringify(panier));
-            window.location.reload();
-        }
-        console.log(panier); 
-        
+        countPanier.push(newPanier);
+        localStorage.setItem("panier", JSON.stringify(countPanier));
+        window.location.reload();
     })
 })
     
