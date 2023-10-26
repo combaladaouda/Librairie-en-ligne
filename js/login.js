@@ -17,7 +17,7 @@ formulaire.addEventListener('submit',e=> {
         if(succes.data){
             alert(succes.message);
             localStorage.setItem('sessions',JSON.stringify(succes.data))
-            window.location.href="../index.html";
+            window.location.href="../acceuil.html";
         }else{
             alert(succes.message)
         }
