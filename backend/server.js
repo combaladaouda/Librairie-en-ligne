@@ -5,10 +5,6 @@ import RouterUser from "./root/user.js";
 import RouterLogin from "./root/login.js";
 import RouterArticle from "./root/article.js";
 
-
-
-
-
 const app = express();
 app.use(cors());
 app.use(express.urlencoded({extended:true}));
@@ -18,9 +14,7 @@ app.use('/api/v1/user', RouterUser);
 app.use('/api/v1/auth', RouterLogin);
 app.use('/api/v1/article', RouterArticle);
 
-
 const port = process.env.PORT || 4010;
-
 
 bdConnect()
 .then(()=>{
